@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Pacifico&family=Raleway:wght@800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b7aa933d0d.js" crossorigin="anonymous"></script>
+
+    
+</head>
+<body>
+
+    <header class="hero" id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">YASHITA</div> 
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                </ul>
+            </nav>
+        
+
+    
+            <div class="hero-content">
+                <div class="header-text">
+                    <h1>Hi, I'm <span>Yashita</span> <br>from India</h1>
+                    <p>Data Scientist</p>
+                </div>
+                <div class="hero-image">
+                    <img src="https://i.pinimg.com/736x/5d/96/38/5d9638136a48b203c57cd8ccf053c3ee.jpg" alt="Your Photo">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="about" >
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="https://i.pinimg.com/736x/94/7b/0b/947b0b33e8c5817379239d690d11e8a9.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="Sub-title">About Me</h1>
+                    <p>Hi, I'm Yashita Aggarwal, an undergraduate student pursuing Computer Science Engineering with a major in Data Science. With a strong foundation built during my non-medical high school years, I’ve developed a keen interest in solving real-world problems using data-driven approaches. I'm passionate about uncovering insights through data analysis, building intelligent systems, and continuously learning emerging technologies in the world of AI and machine learning.</p>
+
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>MS.Excel</span><br>Data analysis</li>
+                            <li><span>Python</span><br>Data management using Libraries</li>
+                            <li><span>SQL</span><br>Designing tables</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Fresher</span><br>Wants To work as a data Scientist</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Btech</span><br>Lovely Professional University</li>
+                            <li><span>High School</span><br>Guru Nanak Public School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services" id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h2>Data analysis</h2>
+                    <p>I transform raw data into clear, actionable insights using tools like Excel and Python. From spotting trends to visualizing key metrics, I simplify complex data to support smarter decisions.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-code"></i> 
+                    <h2>Front-End development</h2>
+                    <p> I build responsive, user-friendly websites with HTML, CSS, and JavaScript. My focus is on clean design, smooth interaction, and delivering seamless user experiences.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fas fa-pencil-ruler"></i>
+                    <h2>Graphic Designer</h2>
+                    <p> I craft visually compelling designs—from logos to social media graphics—using tools like Photoshop, Illustrator, and Canva. My goal is to tell stories that align with your brand.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="https://i.pinimg.com/736x/4e/03/87/4e03872d7166cc5ed92c490708af3261.jpg">
+                    <div class="layer">
+                        <h3>Road Accident data analysis using Excel</h3>
+                        <p>Analyzed road accident data in Excel to identify key trends, high-risk areas, and contributing factors for improved road safety.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://i.pinimg.com/736x/77/95/28/7795281b8a563521031961aaf6c7ad0d.jpg">
+                    <div class="layer">
+                        <h3>Salon website</h3>
+                        <p> Designed a stylish and user-friendly salon website to showcase services, enable online booking, and provide a smooth experience for clients.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://i.pinimg.com/736x/49/6e/d2/496ed2bac69f67561008c6fd75a181c8.jpg">
+                    <div class="layer">
+                        <h3>Cafe website</h3>
+                        <p>Created a warm and welcoming café website featuring its menu, ambiance, online reservations, and special offers for a better dining experience.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://i.pinimg.com/736x/49/6e/d2/496ed2bac69f67561008c6fd75a181c8.jpg">
+                    <div class="layer">
+                        <h3>Stress management Chatbot system</h3>
+                        <p>Developed a stress management chatbot to guide users through relaxation techniques, coping strategies, and motivational support for mental well-being.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn" id="toggle-btn">See More</a>
+        </div>
+    </div>
+
+    <div id="certifications">
+        <h1 class="sub-title">My Certifications</h1>
+        <div class="certifications-wrapper">
+            <div class="certification-box">
+                <i class="fa-solid fa-certificate"></i>
+                <h2>Data Science Internship</h2>
+                <p>Completed internship at SkillCraft as a Data Science Intern.</p>
+                <a href="#" target="_blank">View Certificate</a>
+            </div>
+            <div class="certification-box">
+                <i class="fa-solid fa-chart-line"></i>
+                <h2>Excel for Beginners Course</h2>
+                <p>Learned Excel formulas and data tools through an online course.</p>
+                <a href="#" target="_blank">View Certificate</a>
+            </div>
+            <div class="certification-box">
+                <i class="fa-solid fa-code"></i>
+                <h2>HTML, CSS & JS Course</h2>
+                <p>Completed frontend development course on responsive design.</p>
+                <a href="#" target="_blank">View Certificate</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> yashitaaggarwal2005@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 9592690807</p>
+                    <div class="social-icons">
+                        <a href="https://in.pinterest.com/pin/80994493293765107/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="https://i.pinimg.com/736x/8d/ea/aa/8deaaab925cf5b510243adebf1015156.jpg" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="text" name="E-mail" placeholder="Your E-mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Yashita.<i class="fa-solid fa-heart"></i> All Rights Reserved.</p>
+        </div>
+    </div>
+    
+    
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(let tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(let tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
