@@ -55,26 +55,46 @@
                         <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('Experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Programming-Languages')">Programming-Languages</p>
+                        <p class="tab-links" onclick="opentab('Other-Subjects')">Other-Subjects</p>
                     </div>
 
                     <div class="tab-contents active-tab" id="Skills">
                         <ul>
-                            <li><span>MS.Excel</span><br>Data analysis</li>
-                            <li><span>Python</span><br>Data management using Libraries</li>
-                            <li><span>SQL</span><br>Designing tables</li>
+                            <li><span>MS.Excel + Python</span><br>Data analysis and Data Management using libraries</li>
+                            <li><span>HTML + CSS + JAVASCRIPT</span><br>Front End development</li>
+                            <li><span>SQL + DBMS</span><br>Designing tables</li>
                         </ul>
                     </div>
 
                     <div class="tab-contents" id="Experience">
                         <ul>
-                            <li><span>Fresher</span><br>Wants To work as a data Scientist</li>
+                            <li><span>SkillCraft Technology</span><br>Worked as a Data Science Intern</li>
                         </ul>
                     </div>
 
                     <div class="tab-contents" id="Education">
                         <ul>
-                            <li><span>Btech</span><br>Lovely Professional University</li>
-                            <li><span>High School</span><br>Guru Nanak Public School</li>
+                            <li><span>Btech in Computer Science</span><br>Lovely Professional University,Jalandhar</li>
+                            <li><span>Higher Secondary Education</span><br>Guru Nanak Public School,Mullanpur,Ludhiana</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Programming-Languages">
+                        <ul>
+                            <li><span>Python programming</span></li>
+                            <li><span>C programming</span></li>
+                            <li><span>Cpp programming</span></li>
+                            <li><span>Java programming</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Other-Subjects">
+                        <ul>
+                            <li><span>Operating systems</span></li>
+                            <li><span>Networking Essentials</span></li>
+                            <li><span>Artificial Intelligence</span></li>
+                            <li><span>Computer Organisation and design</span></li>
                         </ul>
                     </div>
                 </div>
@@ -158,7 +178,7 @@
                 <i class="fa-solid fa-certificate"></i>
                 <h2>Data Science Internship</h2>
                 <p>Completed internship at SkillCraft as a Data Science Intern.</p>
-                <a href="#" target="_blank">View Certificate</a>
+                <a href="http://chatgpt.com/c/685cf882-0fb0-8009-80c4-6c49e682c6ae" target="_blank">View Certificate</a>
             </div>
             <div class="certification-box">
                 <i class="fa-solid fa-chart-line"></i>
@@ -183,15 +203,15 @@
                     <p><i class="fa-solid fa-envelope"></i> yashitaaggarwal2005@gmail.com</p>
                     <p><i class="fa-solid fa-phone"></i> +91 9592690807</p>
                     <div class="social-icons">
-                        <a href="https://in.pinterest.com/pin/80994493293765107/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61561676120416"><i class="fa-brands fa-facebook"></i></a>
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-youtube"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://youtube.com/@yashitaagg?si=F-xV3SiG8S8TRbkJ"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/in/yashita-aggarwal-9a347a280/"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                     <a href="https://i.pinimg.com/736x/8d/ea/aa/8deaaab925cf5b510243adebf1015156.jpg" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your name" required>
                         <input type="text" name="E-mail" placeholder="Your E-mail" required>
                         <textarea name="Message" rows="6" placeholder="Your message"></textarea>
@@ -223,5 +243,18 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
     </script>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx8wwZ6bHsk8sa3UwLOezuSDUnjyRHg2WsE0UEz88Re32Y2Q45TEJePBC0HL-8Gv62rkA/exec';
+    const form = document.forms['submit-to-google-sheet'];
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message));
+    });
+  </script>
+  
 </body>
 </html>
