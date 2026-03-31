@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Pacifico&family=Raleway:wght@800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b7aa933d0d.js" crossorigin="anonymous"></script>
+
+    
+</head>
+<body>
+
+    <header class="hero" id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">YASHITA</div> 
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                </ul>
+            </nav>
+        
+
+    
+            <div class="hero-content">
+                <div class="header-text">
+                    <h1>Hi, I'm <span>Yashita</span></h1>
+                    <p>I am a <span id="changing-text"></span></p>
+                </div>
+                <div class="hero-image">
+                    <img src="https://i.pinimg.com/736x/5d/96/38/5d9638136a48b203c57cd8ccf053c3ee.jpg" alt="Your Photo">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="about" >
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="https://i.pinimg.com/736x/94/7b/0b/947b0b33e8c5817379239d690d11e8a9.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="Sub-title">About Me</h1>
+                    <p>Hi, I'm Yashita Aggarwal, an undergraduate student pursuing Computer Science Engineering with a major in Data Science. With a strong foundation built during my non-medical high school years, I’ve developed a keen interest in solving real-world problems using data-driven approaches. I'm passionate about uncovering insights through data analysis, building intelligent systems, and continuously learning emerging technologies in the world of AI and machine learning.</p>
+
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Tech-Skills')">Tech-Skills</p>
+                        <p class="tab-links " onclick="opentab('Soft-Skills')">Soft-Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="Tech-Skills">
+                        <ul>
+                            <li><span>MS.Excel + Python+ ML+ Power BI+ Tableau</span><br>Data analysis and Data Management using libraries</li>
+                            <li><span>HTML + CSS + JAVASCRIPT</span><br>Front End development</li>
+                            <li><span>SQL + DBMS</span><br>Designing tables</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Soft-Skills">
+                        <ul>
+                            <li><span>Problem-Solving</span><br></li>
+                            <li><span>Time Management</span><br></li>
+                            <li><span>Team Collaboration</span><br></li>
+                            <li><span>Leadership</span><br></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>SkillCraft Technology</span><br>Worked as a Data Science Intern</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Btech in Computer Science</span><br>Lovely Professional University,Jalandhar  ,CGPA:6.44</li>
+                            <li><span>Higher Secondary Education</span><br>Guru Nanak Public School,Mullanpur,Ludhiana  ,Percentage:79</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services" id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h2>Data analysis</h2>
+                    <p>I transform raw data into clear, actionable insights using tools like Excel and Python. From spotting trends to visualizing key metrics, I simplify complex data to support smarter decisions.</p>
+                    <a href="#portfolio">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-code"></i> 
+                    <h2>Front-End development</h2>
+                    <p> I build responsive, user-friendly websites with HTML, CSS, and JavaScript. My focus is on clean design, smooth interaction, and delivering seamless user experiences.</p>
+                    <a href="#portfolio">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fas fa-pencil-ruler"></i>
+                    <h2>Graphic Designer</h2>
+                    <p> I craft visually compelling designs—from logos to social media graphics—using tools like Photoshop, Illustrator, and Canva. My goal is to tell stories that align with your brand.</p>
+                    <a href="#portfolio">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+          <h1 class="sub-title">My work</h1>
+      
+          <div class="work-list">
+            <!-- ✅ Always Visible Works -->
+            <div class="work">
+              <img src="https://i.pinimg.com/736x/4e/03/87/4e03872d7166cc5ed92c490708af3261.jpg">
+              <div class="layer">
+                <h3>Road Accident data analysis using Excel</h3>
+                <p>Analyzed road accident data in Excel to identify key trends, high-risk areas, and contributing factors for improved road safety.</p>
+                <a href="https://www.linkedin.com/posts/yashita-aggarwal411_tech-newproject-productdesign-activity-7316792333578956800-h-UL?utm_source=share&utm_medium=member_desktop&rcm=ACoAAERpsAsBExgnKl85lq0dTdzclZ70RvugFng"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+      
+            <div class="work">
+              <img src="https://i.pinimg.com/736x/77/95/28/7795281b8a563521031961aaf6c7ad0d.jpg">
+              <div class="layer">
+                <h3>Instagram Downloader</h3>
+                <p>A simple Instagram Downloader web app built with Python that lets users download Instagram photos, videos, and reels by just pasting the URL.</p>
+                <a href="https://github.com/Yashita-Aggarwal/Instagram-Downloader"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+    
+              <div class="work">
+                <img src="https://i.pinimg.com/736x/49/6e/d2/496ed2bac69f67561008c6fd75a181c8.jpg">
+                <div class="layer">
+                  <h3>IPL matches data analysis</h3>
+                  <p>IPL analytics with Python: data cleaning, EDA, and visuals to reveal match outcomes, venue impact, and player performance.</p>
+                  <a href="https://github.com/Yashita-Aggarwal/IPL-Matches-Data-Analysis-Project-"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+      
+              <div class="work">
+                <img src="https://i.pinimg.com/736x/49/6e/d2/496ed2bac69f67561008c6fd75a181c8.jpg">
+                <div class="layer">
+                  <h3>Stress management Chatbot system</h3>
+                  <p>Developed a stress management chatbot to guide users through relaxation techniques, coping strategies, and motivational support for mental well-being.</p>
+                  <a href="https://github.com/Yashita-Aggarwal/STRESS-MANAGEMENT-WEBSITE"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+    </div>
+      
+
+    <div id="certifications">
+        <h1 class="sub-title">My Certifications</h1>
+        <div class="certifications-wrapper">
+            <div class="certification-box">
+                <i class="fa-solid fa-certificate"></i>
+                <h2>Python Libraries for Data Science</h2>
+                <p>Experienced in Python data science libraries like NumPy, Pandas, Matplotlib, and Seaborn for data analysis and visualization.</p>
+                <a href="https://certificates.simplicdn.net/share/8834334_91591291755849862057.pdf" target="_blank">View Certificate</a>
+            </div>
+            <div class="certification-box">
+                <i class="fa-solid fa-chart-line"></i>
+                <h2>Introduction to MS Excel.</h2>
+                <p>Developed proficiency in Excel tools such as VLOOKUP, pivot tables, conditional formatting, data analysis and visualization.</p>
+                <a href="https://certificates.simplicdn.net/share/8823836_91591291755701168525.pdf" target="_blank">View Certificate</a>
+            </div>
+            <div class="certification-box">
+                <i class="fa-solid fa-code"></i>
+                <h2>Privacy and Security in Social Media</h2>
+                <p>Learned about privacy risks, cyber threats, and security practices for protecting personal data on social media platforms.</p>
+                <a href="#" target="_blank">View Certificate</a>
+            </div>
+            <div class="certification-box">
+                <i class="fa-solid fa-code"></i>
+                <h2>Fundamentals of Networks</h2>
+                <p>Learned the fundamentals of network communication including networking models, protocols,  and internet architecture.</p>
+                <a href="https://www.coursera.org/account/accomplishments/certificate/BUBZACGIZ22M" target="_blank">View Certificate</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> yashitaaggarwal2005@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 9592690807</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/yashita-aggarwal-9a347a280/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Yashita-Aggarwal"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="/Users/yashitaaggarwal/Desktop/Yashita CV (1).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formspree.io/f/xojpwenb" method="POST">
+
+                        <input type="text" name="name" placeholder="Your name" required>
+                    
+                        <input type="email" name="email" placeholder="Your E-mail" required>
+                    
+                        <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                    
+                        <button type="submit" class="btn btn2">Submit</button>
+                    
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Yashita.<i class="fa-solid fa-heart"></i> All Rights Reserved.</p>
+        </div>
+    </div>
+    
+    
+
+
+    <script>
+
+        /* TAB SWITCHING */
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname) {
+          for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");
+          }
+          for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+        
+        
+        
+        
+        /* TYPING / CHANGING TEXT */
+        
+
+document.addEventListener("DOMContentLoaded", function(){
+
+const roles = [
+"Data Scientist ",
+"Machine Learning Enthusiast ",
+"Data Analyst ",
+"Front-end Developer ",
+"Graphic Designer "
+];
+
+let roleIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeEffect(){
+
+const element = document.getElementById("changing-text");
+const currentRole = roles[roleIndex];
+
+if(isDeleting){
+    element.textContent = currentRole.substring(0,charIndex--);
+}else{
+    element.textContent = currentRole.substring(0,charIndex++);
+}
+
+let speed = isDeleting ? 50 : 100;
+
+if(!isDeleting && charIndex === currentRole.length){
+    speed = 1500; 
+    isDeleting = true;
+}
+
+else if(isDeleting && charIndex === 0){
+    isDeleting = false;
+    roleIndex = (roleIndex + 1) % roles.length;
+}
+
+setTimeout(typeEffect,speed);
+}
+
+typeEffect();
+
+});
+
+
+        
+        </script>
+        
+  
+</body>
+</html>
